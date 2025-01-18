@@ -1,3 +1,49 @@
+# Custom Producer and Consumer Scripts
+
+This project now includes custom producer and consumer scripts for streaming buzz messages.
+
+## Consumer Script
+### `basic_consumer_mosss.py`
+- **Purpose:** Reads a log file as it is being written.
+- **Usage:**
+  ```bash
+  py -m consumers.basic_consumer_moss.py
+  ```
+- **Description:** Continuously monitors the log file for new entries and alerts when specific messages are found.
+
+## Producer Script
+### `basic_generator_case.py`
+- **Purpose:** Generates and logs streaming buzz messages.
+- **Usage:**
+  ```bash
+  py -m producers.basic_generator_moss.py
+  ```
+- **Description:** Creates a continuous stream of random buzz messages related to outdoor activities.
+
+## Environment Setup
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Set environment variables in `.env`:
+   ```env
+   MESSAGE_INTERVAL_SECONDS=3
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # buzzline-01-case
 
 This project introduces streaming data. 

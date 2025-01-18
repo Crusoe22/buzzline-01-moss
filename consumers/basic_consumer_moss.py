@@ -30,7 +30,7 @@ def process_message(log_file) -> None:
     with open(log_file, "r") as file:
         # Move to the end of the file
         file.seek(0, os.SEEK_END)
-        print("Consumer is ready and waiting for a new log message...")
+        print("The Moss Info Consumer is ready and waiting for a new log message...")
 
         # Use while True loop so the consumer keeps running forever
         while True:
@@ -52,9 +52,9 @@ def process_message(log_file) -> None:
             print(f"Consumed log message: {message}")
 
             # monitor and alert on special conditions
-            if "I just loved a movie! It was funny." in message:
-                print(f"ALERT: The special message was found! \n{message}")
-                logger.warning(f"ALERT: The special message was found! \n{message}")
+            if "I just hiked a hidden trail! The experience was absolutely unbelievable" in message:
+                print(f"Hooray! We've uncovered the special message: \n{message}")
+                logger.warning(f"Heads up! The special message has been found: \n{message}")
 
 
 #####################################
