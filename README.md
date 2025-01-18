@@ -3,7 +3,7 @@
 This project now includes custom producer and consumer scripts for streaming buzz messages.
 
 ## Consumer Script
-### `basic_consumer_mosss.py`
+### `basic_consumer_moss.py`
 - **Purpose:** Reads a log file as it is being written.
 - **Usage:**
   ```bash
@@ -12,11 +12,11 @@ This project now includes custom producer and consumer scripts for streaming buz
 - **Description:** Continuously monitors the log file for new entries and alerts when specific messages are found.
 
 ## Producer Script
-### `basic_generator_case.py`
+### `basic_producer_moss.py`
 - **Purpose:** Generates and logs streaming buzz messages.
 - **Usage:**
   ```bash
-  py -m producers.basic_generator_moss.py
+  py -m producers.basic_producer_moss.py
   ```
 - **Description:** Creates a continuous stream of random buzz messages related to outdoor activities.
 
